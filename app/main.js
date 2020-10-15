@@ -1,7 +1,7 @@
-import ValuesController from "./Controllers/ValuesController.js";
+import CandyController from "./Controllers/CandyController.js";
 
 class App {
-  valuesController = new ValuesController();
+  candyController = new CandyController();
 }
 
 window["app"] = new App();
