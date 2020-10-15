@@ -1,4 +1,5 @@
 import Candy from "./Models/Candy.js"
+import Cart from "./Models/Cart.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
@@ -8,6 +9,8 @@ class AppState extends EventEmitter {
 
 /**@type {Cart[]}*/
   cart = []
+
+   money = 100
 }
 
 export const ProxyState = new Proxy(new AppState(), {

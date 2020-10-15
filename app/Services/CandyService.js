@@ -12,10 +12,16 @@ class CandyService {
 
   addToCart(id) {
     let boughtCandy = ProxyState.candy.find(c => c.id == id)
-    // ProxyState.cart = ProxyState.cart.push(boughtCandy)
+    
     console.log(boughtCandy);
     ProxyState.cart = [...ProxyState.cart, boughtCandy]
     console.log(ProxyState.cart);
+  }
+  
+  makeMoney() {
+    money += 10
+    document.getElementById('totalMoney').innerHTML = `${money}`
+    console.log(money);
   }
 
 }

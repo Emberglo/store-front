@@ -18,8 +18,8 @@
             </div>
             <div class="col-3">
                 <div>
-                    <p>Your Total: $<span id="totalMoney"></span></p>
-                    <button>Make Dat Money</button>
+                    <p>Your Total: $<span id="totalMoney">100</span></p>
+                    <button onclick="app.candyController.makeMoney()">Make Dat Money</button>
                 </div>
             </div>
             <div class="col-3">
@@ -36,8 +36,10 @@
         
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
-                <div id="cart" class="modal-content">
-                    
+                <div class="modal-content">
+                    <div id="cart"></div>
+                    <p>total</p>
+                    <button class="btn btn-success">buy</button>
                 </div>
             </div>
         </div>

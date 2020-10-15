@@ -1,4 +1,4 @@
-export default class Candy {
+export default class Cart {
     constructor(data) {
         this.title = data.title
         this.img = data.img
@@ -7,7 +7,7 @@ export default class Candy {
         this.id = data.id
     }
 
-    get Template() {
+    get CartTemplate() {
 
         return /*html*/`
         <div class="row">

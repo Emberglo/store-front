@@ -22,4 +22,8 @@ export default class CandyController {
     candyService.addToCart(id)
   }
 
+  makeMoney() {
+    candyService.makeMoney()
+  }
+
 }
