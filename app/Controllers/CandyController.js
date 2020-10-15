@@ -18,8 +18,8 @@ export default class CandyController {
     _draw()
   }
 
-  buy(id) {
-    candyService.buy(id)
+  addToCart(id) {
+    candyService.addToCart(id)
   }
 
 }

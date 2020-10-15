@@ -10,11 +10,12 @@ class CandyService {
     console.log("service");
   }
 
-  buy(id) {
-    let boughtCandy = ProxyState.candy.filter(c => c.id == id)
+  addToCart(id) {
+    let boughtCandy = ProxyState.candy.find(c => c.id == id)
     // ProxyState.cart = ProxyState.cart.push(boughtCandy)
     console.log(boughtCandy);
- 
+    ProxyState.cart = [...ProxyState.cart, boughtCandy]
+    console.log(ProxyState.cart);
   }
 
 }
